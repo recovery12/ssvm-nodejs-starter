@@ -40,15 +40,13 @@ pub fn solve(params: &str) -> String {
   {
     T = val2.pow(1./3.);
   }
-  
+  real = (-((S+T)/2)-(co.2/(3*co.3)))
+  img = ((tmp1.sqrt())*(S-T))
+
+  let x1: f32 = S+T-(co.2/(3*co.3))
+  let x2 = num::complex::Complex::new(real, img)
+  let x3 = num::complex::Complex::new(real, -1. * img)
+
+  println!("The solutions for the Equation are: ")
+  println!(x1, x2, x3)
 }
-
-real = (-((S+T)/2)-(co[2]/(3*co[3])))
-img = ((sqrt(3/4))*(S-T))
-
-x1 = S+T-(co[2]/(3*co[3]))
-x2 = complex(real, img)
-x3 = complex(real, -img)
-
-print("The solutions for the Equation are: ")
-print(x1, x2, x3)
